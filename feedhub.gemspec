@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
   s.authors     = ["Francois Weber"]
   s.email       = 'webarbeit@gmail.com'
   s.files       = ["lib/feedhub.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/feedhub'
+  s.homepage    = 'http://rubygems.org/gems/feedhub'
+  s.add_dependency("octokit")
 end
