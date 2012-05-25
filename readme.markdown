@@ -1,6 +1,4 @@
-This gem is not useful yet!
-
-*Description:*
+***Description:***
 Use all of the github issue benefits by saving data as github issue.
 
 ##Use case:##
@@ -9,7 +7,7 @@ For example, if your website provides a feedback form:
 Instead of saving it into an extra feedback model, you can autmatically open a new issue in a github repo with the users text and
 the according label.
 
-*Benefits:*
+***Benefits:***
 
 * No model, no interface to implement
 * Team can discuss feedback
@@ -18,10 +16,19 @@ the according label.
 
 ##How to use##
 
-*Open issue:*
+***Setup:***
 ```ruby
-# in your controller method
-Feedhub::open_issue (subject, body, label)
+# The github account to login. This github account will
+# create the issues
+Feedhub::set_user('github-account', 'user-password')
+
+# The github repository to save the issue
+Feedhub::set_repo('repo-account', 'repo-name')
 ```
 
-... coming soon!
+***Open issue:***
+```ruby
+# in your controller method
+# params subject, body, label
+Feedhub::open_issue('The title', 'Here I write a bit more', "question")
+```
