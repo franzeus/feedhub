@@ -11,7 +11,8 @@ the according label.
 
 * No model, no interface to implement
 * Team can discuss feedback
-* Labels
+* Labels (filtering)
+* See closed issues
 
 
 ##How to use##
