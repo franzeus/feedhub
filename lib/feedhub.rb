@@ -14,7 +14,6 @@ module Feedhub
   end
 
   def self.github_auth
-    puts "auth"
     begin
       @@client = Octokit::Client.new(:login => @user_name, :password => @user_pw)
     rescue Exception => e
@@ -25,7 +24,6 @@ module Feedhub
   def self.open_issue issue_title, issue_body, issue_label = 'question'
     begin
       github_auth
-      puts @@client
       @@client.create_issue(@repository, issue_title, issue_body, { :labels => [issue_label] })
     rescue Exception => e
       puts "Error: Unable to create issue!\n#{e}"

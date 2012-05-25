@@ -24,6 +24,7 @@ the according label.
 Feedhub::set_user('github-account', 'user-password')
 
 # The github repository to save the issue
+# I.e. here: Feedhub::set_repo(webarbeit, feedhub)
 Feedhub::set_repo('repo-account', 'repo-name')
 ```
 
