@@ -10,9 +10,10 @@ the according label.
 ***Benefits:***
 
 * No model, no interface to implement
-* Team can discuss feedback
+* Comments (team can discuss feedback)
+* Assignments
 * Labels (filtering)
-* See closed issues
+* See issues state (open / closed)
 
 
 ##How to use##
