@@ -22,16 +22,23 @@ the according label.
 ```ruby
 # The github account to login. This github account will
 # create the issues
-Feedhub::set_user('github-account', 'user-password')
+Feedhub::set_user(:name => 'github-account', :password => 'user-password')
 
 # The github repository to save the issue
-# I.e. here: Feedhub::set_repo(webarbeit, feedhub)
-Feedhub::set_repo('repo-account', 'repo-name')
+# (I.e. here: webarbeit, feedhub)
+Feedhub::set_repo(:account => 'repo-account', :name => 'repo-name')
 ```
 
 ***Open issue:***
 ```ruby
-# in your controller method
 # params subject, body, label
-Feedhub::open_issue('The title', 'Here I write a bit more', "question")
+Feedhub::open_issue(:title => 'The title', :body => 'Here I write a bit more', :label => "question")
+```
+Throws error if labels does not exists
+
+
+The open_issue! Method with bang! creates a new label, if it does not already exists
+```ruby
+# params subject, body, label
+Feedhub::open_issue!(:title => 'The title', :body => 'Here I write my feedback', :label => "newlabel")
 ```
