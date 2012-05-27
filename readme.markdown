@@ -43,5 +43,5 @@ The open_issue! Method with bang! creates a new label, if it does not already ex
 Feedhub::open_issue!(:title => 'The title', :body => 'Here I write my feedback', :label => "newlabel")
 ```
 
-***Dependencies:***
+##Dependencies:##
 * octokit
