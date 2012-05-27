@@ -34,10 +34,10 @@ Feedhub::set_repo(:account => 'repo-account', :name => 'repo-name')
 # params subject, body, label
 Feedhub::open_issue(:title => 'The title', :body => 'Here I write a bit more', :label => "question")
 ```
-Throws error if labels does not exists
+Throws error if labels does not exist.
 
 
-The open_issue! Method with bang! creates a new label, if it does not already exists
+The open_issue! Method with bang! creates a new label, if it does not already exist.
 ```ruby
 # params subject, body, label
 Feedhub::open_issue!(:title => 'The title', :body => 'Here I write my feedback', :label => "newlabel")

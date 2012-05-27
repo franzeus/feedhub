@@ -43,8 +43,6 @@ module Feedhub
   # Open issues
   def self.open_issue issue
     github_auth
-    
-    puts issue[:label]
     return false if !label_exists(issue[:label])
 
     begin
